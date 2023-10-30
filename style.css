@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: border-box;
+
+}
+header{
+background-color: #3D3D3D;
+}
+
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.nav-logo{
+    height: 50px;
+    width: 113px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.nav-address{
+    margin-left: 3px;
+}
+
+.add-first{
+    size: 12px;
+    color: #cccccc;
+    margin-left: 15px;
+}
+.add-sec{
+    size: 14px;
+    color: #ffff;
+    margin-left: 0px;
+}
+.add-icon{
+    display: flex;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/** box-3 **/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(219, 162, 76);
+    width: 580px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 3px;
+   
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 70px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; 
+    border: none;
+   
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+}
+.search-icon{
+    width: 45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border: 1px solid blue;
+}
+header ul:hover{
+    border: 1px solid blue;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li ul{
+    position: absolute;
+    left: auto;
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    position: relative;
+    text-decoration: none;
+}
+header .menu-toggle{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  /* clear'n floats */
+  ul:after {
+    clear: both;
+  }
+  
+  ul:before,
+  ul:after {
+      content: " ";
+      display: table;
+  }
+
+
+
+ul.primary li a {
+    display: block;
+    padding: 20px 30px;
+    border-right: 1px solid #3D3D3D;
+  }
+  
+  ul.primary li:last-child a {
+    border-right: none;
+  }
+  
+  ul.primary li a:hover {
+    
+    color: #000;
+  }
+
+
+ul.sub {
+    position: absolute;
+    z-index: 200;
+    box-shadow: 2px 2px 0 #BEBEBE;
+    width: 35%;
+    display:none;
+  }
+  
+  ul.sub li {
+    float: none;
+    margin: 0;
+  }
+  
+  ul.sub li a {
+    border-bottom: 1px dotted #ccc;
+    border-right: none;
+    color: #000;
+    padding: 15px 30px;
+  }
+  
+  ul.sub li:last-child a {
+    border-bottom: none;
+  }
+  
+  ul.sub li a:hover {
+    color: #000;
+    background: #eeeeee;
+  }
+  
+  /* sub display*/
+  ul.primary li:hover ul {
+    display: block;
+    background: #fff;
+  }
+  
+
+  ul.primary li:hover ul {
+    display: block;
+    background: #fff;
+  }
+  
+  /* keeps the tab background white */
+  ul.primary li:hover a {
+    background: #fff;
+    color: #666;
+    text-shadow: none;
+  }
+  
+  ul.primary li:hover > a{
+    color: #000;
+  } 
+
+
+  footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #3D3D3D;
+    
+    justify-items: last baseline;
+
+  }
+
+
+
+  /* cards css part---*/
+
+  .tnb-google-search-inner-container{
+  -webkit-text-size-adjust: 100%;
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 5px 40px 5px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-radius: 25px;
+  width: 100%;
+  font-style: italic;
+  }

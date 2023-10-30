@@ -1,0 +1,126 @@
+html {
+    background: #f5f7f8;
+    font-family: system-ui;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    
+    
+  }
+  
+  header {
+   
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-left: 37em;
+  }
+
+
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .card{
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding-left: 5px;
+   
+    position: relative;
+    top:0;
+    transition: all .1s ease-in;
+    width: 100%;
+    &:hover{
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    }
+    article{
+        padding-left: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 20px;
+        margin: 0;
+        color: #333;
+    }
+    p{
+        flex: 1;
+        line-height: 1.4;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    span{
+        font-size: 12px;
+        font-weight: bold;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        
+    }
+
+    .thumb{
+        padding-bottom: 60%;
+        background-size: cover;
+        background-position: center center;
+        padding-left: 20px;
+    }
+  }
+  .item-1{
+    @media (min-width: 60em) {
+        grid-column: 1 / span 2;
+        
+        h1 {
+          font-size: 24px;
+        }
+  }
+}
+
+a{
+    height: 30em;
+}
+
+ 
+  
+  /*.img1{
+    background-position: center center;
+    width: 570px;
+    height: fit-content;
+    padding-top: 20px;
+    background-size: cover;
+  }
+  .item-1 {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }*/
